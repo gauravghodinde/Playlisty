@@ -17,7 +17,7 @@ const TimeoutPage = () => {
   const [token, setToken] = useState("");
 
   const Client_ID = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID;
-  const REDIRECT_URI = "https://playlistify-33fk.vercel.app/login"; 
+  const REDIRECT_URI = "https://playlisty-theta.vercel.app/login"; 
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
   const RESPONSE_TYPE = "token";
 
