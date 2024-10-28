@@ -371,6 +371,7 @@ const App = () => {
           logout();
           window.location.reload();
         });
+        
     }
   };
 
