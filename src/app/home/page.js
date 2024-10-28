@@ -155,7 +155,7 @@ const App = () => {
         const reclaimProofRequest = await initializeReclaim();
         const url = await generateRequestUrl(reclaimProofRequest);
         setRequestUrl(url);
-        setStatus("Ready to start verification");
+        ("Ready to start verification");
 
         await startVerificationSession(
           reclaimProofRequest,
@@ -228,17 +228,17 @@ const App = () => {
                 setreclaimusername(username);
               }
 
-              setStatus("Proof received!");
+              // setStatus("Proof received!");
             }
           },
           (error) => {
             console.error("Verification failed", error);
-            setStatus(`Error: ${error.message}`);
+            // setStatus(`Error: ${error.message}`);
           }
         );
       } catch (error) {
         console.error("Setup failed", error);
-        setStatus(`Setup failed: ${error.message}`);
+        // setStatus(`Setup failed: ${error.message}`);
       }
     }
 
